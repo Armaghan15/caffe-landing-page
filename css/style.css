@@ -102,66 +102,153 @@ img {
   height: 500px;
 }
 
-/* About Section
-.about {
-  height: 100vh;
-  background: var(--primary);
-  color: white;
-}
-
-.about-me {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-me .text {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-/* }
-
-.about-me .text h1 {
-  font-size: 3em;
-  font-weight: 600;
-}
-
-.about-me .text p {
-  font-size: 1.2em;
-  width: 60%; */
-/* } */ 
 
 /* About */
 .about-section {
   height: 100vh;
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-us {
+  width: 50%;
+}
+
+.about-us h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.about-us p {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 30px;
+}
+
+.about-images {
+  background: #fff;
+  width: 350px;
+  padding: 80px 20px 0px 20px;
+  border-radius: 50px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+  transition: .4s ease-in-out;
+  margin-top: 90px;
+}
+
+
+.about-images:hover {
+  transform: translateY(-5px);
+  box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+/* What we Offer Section */
+.what-we-offer {
+  height: 100vh;
+  padding: 50px;
+}
+
+.what-we-offer h1 {
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.what-we-offer .cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.what-we-offer .cards .card {
+  background-color: rgba(255, 255, 255, 0.89);
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+  /* height: 440px; */
+  width: 330px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary);
-  color: white;
+  padding: 30px;
+  transition: .4s ease-in-out;
 }
 
-.about-us {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.what-we-offer .cards .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.25);
 }
 
-.about-us .text {
-  width: 70%;
-  height: 100%;
+.what-we-offer .cards .card h4 {
+  font-size: 1.3em;
+  font-weight: 700;
   text-align: center;
 }
 
-.about-us .text h1 {
-  font-size: 3em;
-  font-weight: 600;
+.what-we-offer .cards .card p {
+  font-size: 1em;
+  text-align: center;
 }
 
-.about-us .text p {
-  font-size: 1.2em;
-  margin-top: 30px;
+.what-we-offer .cards .card img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+
+/* Contact Us */
+.contact {
+  height: 100vh;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+}
+
+.contact h1 {
+  color: white;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+
+.showcase-form {
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+}
+
+.showcase-form .form-control {
+  margin: 25px 0;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+  border: none;
+  border-bottom: 1px solid var(--primary);
+  width: 100%;
+  outline: none;
+  padding: 14px;
+  font-size: 16px;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+.showcase-form .button-primary {
+  font-size: 1em;
+  width: 100px;
 }
