@@ -259,3 +259,100 @@ img {
   font-size: 1em;
   width: 100px;
 }
+
+
+
+/* Media Queries */
+
+  /* Tablets and Under */
+  @media (max-width: 768px) { 
+    * {
+      font-size: 18px;
+    }
+
+    /* Navbar */
+    .navbar {
+      height: 180px;
+    }
+
+    .navbar .container {
+      flex-direction: column;
+    }
+
+    .navbar .container .button-primary {
+      font-size: 18px;
+    }
+
+    /* Home Section */
+    .home {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .home .home-text h1 {
+      font-size: 40px;
+    }
+
+    .home .home-text p {
+      font-size: 20px;
+    }
+
+    .home .home-image {
+      display: none;
+    }
+
+    /* About Section */
+    .about-section {
+      flex-direction: column;
+      padding: 100px;
+    }
+
+    .about-section .about-us {
+      width: 450px;
+    }
+
+    .about-section .about-us {
+      font-size: 14px;
+    }
+
+    .about-section .about-us h1 {
+      font-size: 38px;
+    }
+
+    .about-section .about-images {
+      display: none;
+    }
+
+    /* What we offer section */
+
+    .what-we-offer {
+      height: 120vh;
+      padding: 100px;
+    }
+
+    .what-we-offer h1 {
+      font-size: 30px;
+    }
+
+    .what-we-offer .cards {
+      flex-direction: column;
+      margin-top: -10px;
+    }
+
+    .what-we-offer .cards .card {
+      width: 300px;
+      height: 300px;
+      margin-top: 20px;
+    }
+
+    .what-we-offer .cards .card img {
+      width: 100px;
+      padding: 20px;
+      margin-bottom: -10px;
+    }
+
+    /* Contact Section */
+    .contact {
+      height: 80vh;
+    }
+  }
