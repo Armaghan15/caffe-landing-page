@@ -277,10 +277,12 @@ img {
     /* Navbar */
     .navbar {
       height: 180px;
+      justify-content: center;
     }
 
     .navbar .container {
       flex-direction: column;
+      justify-content: center;
     }
 
     .navbar .container .button-primary {
@@ -289,7 +291,8 @@ img {
 
     /* Home Section */
     .home {
-      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
     }
 
@@ -307,7 +310,8 @@ img {
 
     /* About Section */
     .about-section {
-      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       padding: 100px;
     }
 
@@ -340,6 +344,8 @@ img {
 
     .what-we-offer .cards {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       margin-top: -10px;
     }
 
